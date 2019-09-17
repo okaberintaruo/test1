@@ -1,8 +1,18 @@
+<?php
+if(isset($_POST))
+{
+echo "Author:".$_POST["author"];
+}
+?>
 <html>
 <head>
 <title>Welcome</title>
 </head>
 <body>
 <h1>Hello World...</h1>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  Enter your name:<input type="text" name="author">
+  </form>
+  Enter your comment
 </body>
 </html>
