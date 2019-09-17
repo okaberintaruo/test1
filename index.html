@@ -10,7 +10,7 @@ echo "Author:".$_POST["author"];
 </head>
 <body>
 <h1>Hello World...</h1>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
   Enter your name:<input type="text" name="author">
   </form>
   Enter your comment
